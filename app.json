@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "task-manager",
+    "slug": "task-manager",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "task-manager",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.taskmanager",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.570147932413-rl52dtqtf32548rnt1uu9gn0ph9t06qn"
+        }
+      },
+      "infoPlist": {
+        "NSCalendarsUsageDescription": "Allow Task Manager to add tasks to your calendar",
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.570147932413-rl52dtqtf32548rnt1uu9gn0ph9t06qn"
+            ]
+          }
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.taskmanager"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "@react-native-google-signin/google-signin",
+      "expo-localization"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "bd706334-c5c5-42c7-8d9a-eb596da6c7ba"
+      }
+    },
+    "owner": "yanrui"
+  }
+}
